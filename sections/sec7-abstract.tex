@@ -1,0 +1,19 @@
+%!TEX program = xelatex
+%!TEX root = ../thesis.tex
+\begin{abstract}
+
+As the air pollution problems are becoming more and more severe, researchers and engineers proposed many works recently. We designed and implemented GreenEyes, an air pollution evaluation system based on WaveNet. We creatively stacked several WaveNet blocks together and made use of Attention and LSTM. Our model aims to solve time series forecasting problems in air pollution level evaluations.
+
+In our evaluation system, the model's goal is to predict the trend of air pollution levels appropriately. For model training, we collected data from four PM2.5 sensors of the same type. And we applied polygonization processing to the target IAQI level. Our experiments showed that our model fits the target well. Moreover, we compare our model's fitting performance given only one channel of data and all four channels' data. The results show that the model performs better with more data, but it will also cost more time to learn.
+
+% 并没有做比较，去掉
+% a smart air PM sensing and monitoring system, make analyses and compare with other simple methods such as average local filter and KNN algorithm. The results show that our method could produce more "Rightly" advice.
+
+GreenEyes is also a universal model with much potential. It shows great outcomes in the time series fitting problems in our air pollution evaluation system. We think it is also very potential for other applications such as weather forecasting and earthquake predicting.
+
+Finally, by distributing our GreenEyes model to our air pollution evaluation system, building an end-to-end AIoT system, which has functions like data collecting, evaluating, and giving feedback, is possible.
+% More importantly, our models show that by using our method, more sensors could provide more reliable strategies, and the reliability is also measurable.
+
+% We also distributed our algorithm to our project, GreenEyes Mobile, an iOS app that can access data from the sensing system mentioned above in real-time. This app shows the application in the real life of our work.
+
+\end{abstract}

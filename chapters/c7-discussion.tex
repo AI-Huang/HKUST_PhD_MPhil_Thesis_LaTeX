@@ -1,0 +1,20 @@
+%!TEX program = xelatex
+%!TEX root = ../thesis.tex
+
+\chapter{Discussion}\label{chap:discussion}
+
+% \yan{Do you think it is better to divide this section into two subsections: limitations, future research directions?}
+% Thx, but no. Boss let me to write them into one single chapter.
+We proposed the GreenEyes model to solve the time series fitting problems in air pollution evaluation. Compared with related works such as GNN, our model's architecture is simpler and easier to be distributed. Its components are relatively basic, making it easier to do feature analyzing works and more possibly interpretable. Our model inherits effective but not complex components such as residual connections and 1D dilated convolution from WaveNet. By stacking WaveNet layers, our model becomes modulized, and its data throughput capability has been enhanced.
+
+Just as we introduced by related work, Arduino \cite{okokpujie2018smart}, ARM \cite{ailing2017design} could also be used for IoT design and data collection. We have designed an ARM platform to collect the air pollution data, which can also send data to PC. However, we retrieve data through a USB connection between the sensors and the computer for our current time series fitting work. For wireless data transmission demands such as BLE and WiFi, the ARM platform is optional in our work design.
+
+As for the engineering price, four sensors in our experiments cost only about 400 RMB. For model training, we did our experiments on a single-channel 1080 Ti GPU. When hyper-parameter stride is set to 10, it costs about 1 hour to train the model on one channel of the sensor's data for 100 epochs, which is enough to get it saturated. When stride is set to 5, it costs about 2 hours, and 6 hours for stride is 2.
+
+In this thesis, we placed all the four sensors at the same place to validate the sensors' reliability and stability. In another way, we also proved the idea of data augmentation, which means the more the data, the better performance the model could yield. However, these data from 4 sensors are pretty homogeneous compared with those from scenarios where sensors are distributed in various places. During the same time, many works such as GNN \cite{wu2020connecting} conclude feasible methods to do correlation analysis between data from multi-sources.
+
+Hence, firstly, correlation analysis could be done through these methods, without regard to whether we put our sensors at the same place or distribute them at different spots. This method could be used to better validate the sensors' reliability. Secondly, for the distributed cases, if the correlation information is found, works related to air pollution sensor network designing could be progressed, such as data fusion for multi types of sensors and air pollution spatial interpolation. Spatial interpolation problems are also essential, especially for path planning tasks in scenarios such as urban transportation planning.
+
+When it comes back to time series forecasting problems, a pity shortcoming of this thesis is that we haven't collected enough data for the forecasting problem, so we just did the fitting work. Our sensors could collect more valid data for training our model. Data could also be collected from all kinds of data platforms, such as websites. If the quantity of the collected data is large enough and their effectiveness and reliability are ensure, we could conduct more experiments and research in the future.
+% Potential application
+Finally, the intention of our work gives considerations to both academic research and industrial application. Nowadays, neural network inference algorithms could be distributed on mobile phones due to the development of mobile computational platforms. For instance, TensorFlow provides a tool package called TensorFlow Lite. If our model is transferred into mobile phones, given a smart sensor unit that is able to transmit data, the phones could do the inference and prediction without a PC. I believe this is a practical solution for those AIoT users.

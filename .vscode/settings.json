@@ -1,0 +1,104 @@
+{
+  "grammarly.overrides": [
+    {
+      "files": ["**/chapters/c8-conclusion.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c7-discussion.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c6-experiments.tex.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c5-data_collecting_modeling.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c4_greeneyes_model.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c3_related_work.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c2_prelimilaries.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/chapters/c1_intro.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/sections/sec7-abstract.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    },
+    {
+      "files": ["**/sections/sec3-acknowledgments.tex"],
+      "config": {
+        "audience": "knowledgeable",
+        "dialect": "american",
+        "domain": "general",
+        "emotions": ["neutral", "confident", "analytical"],
+        "goals": ["inform", "describe"]
+      }
+    }
+  ]
+}

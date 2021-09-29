@@ -1,0 +1,13 @@
+%!TEX program = xelatex
+%!TEX root = ./thesis.tex
+\chapter{Conclusion}
+
+The WaveNet model designed for audio data processing is generalizable and suitable for regression such as time series forecasting. Our work successfully put it into usage for the IAQI level fitting problem. It shows that our GreenEyes model based on WaveNet has strong data fitting capability as the lengths of the input data sequences can be very large.
+
+The GreenEyes model fits the processed train data well and predicts well on coordinated validation and test data. Both the MSE metric and MAE metric could converge into a small value.
+
+It is also found that, when trained with more channels of sensor data, the model can perform well. In somehow, this trick could be regarded as sensor data augmentation.
+
+Our innovative method that humans manually label the IAQI level is useful. It creates an appropriated target label function that the model can learn. Also, based on the labeling tricks, the problem that the predictions on the IAQI level will fluctuate near the thresholds is quite reduced. Furthermore, it comes from a real scenario when users interact with this machine learning product and system.
+
+It is well tested that our GreenEyes AIoT system is dependable and has versatile applications. An app has been developed half the way to monitor the IAQI data in real-time when sensors are connected. GreenEyes' deep learning model can also be installed on the mobile and predict the IAQI level.
